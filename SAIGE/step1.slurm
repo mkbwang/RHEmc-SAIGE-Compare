@@ -4,7 +4,7 @@
 #SBATCH --mail-type=NONE
 #SBATCH --mem=1g
 #SBATCH --cpus-per-task=1
-#SBATCH --array=3,31,38,116,136,148,171,193,223,226,228,256,258,270,291,294,296,311,352,354,391,394
+#SBATCH --array=1-400
 
 Rscript /net/wonderland/home/wangmk/GSRA/RHEmc-SAIGE-Compare/SAIGE/step1_fitNULLGLMM.R     \
         --plinkFile=/net/wonderland/home/wangmk/GSRA/RHEmc-SAIGE-Compare/plink/example \
@@ -17,5 +17,5 @@ Rscript /net/wonderland/home/wangmk/GSRA/RHEmc-SAIGE-Compare/SAIGE/step1_fitNULL
         --isCovariateTransform=FALSE \
         --nThreads=4 \
         --LOCO=FALSE	\
-	--tauInit=0,0 >/dev/null
+	--tauInit=0,0 > /dev/null
 

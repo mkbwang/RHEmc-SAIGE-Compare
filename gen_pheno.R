@@ -10,7 +10,7 @@ standard_geno = scale(genotype)
 
 Nindv = dim(genotype)[1]
 Nsnp = dim(genotype)[2]
-h = 0.9 # this is the parameter that decides the variance components proportion
+h = 0.4 # this is the parameter that decides the variance components proportion
 
 # template phenotypes files to feed to RHEmc and SAIGE
 RHEmc_template = read.table('RHEmc/RHEmc_template.txt', sep="", header=T)
