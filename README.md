@@ -11,6 +11,19 @@ You will need to install the [BEDMatrix](https://cran.r-project.org/web/packages
 ```
 install.packages("BEDMatrix")
 ```
+
+Then create the folders which will hold the simulated phenotypes as well as the analysis results. Type in the bash shell
+```
+mkdir SAIGE/simulatedphenos
+mkdir SAIGE/simulatedphenos_sd
+mkdir RHEmc/simulatedphenos
+mkdir RHEmc/simulatedphenos_sd
+mkdir RHEmc/output
+mkdir RHEmc/output_sd
+mkdir SAIGE/output
+mkdir SAIGE/output_sd
+```
+
 After that, type in the bash shell
 
 ```
