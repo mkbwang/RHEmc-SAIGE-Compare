@@ -1,8 +1,6 @@
 
 library(BEDMatrix)
 
-# read in array id
-i <- Sys.getenv("SLURM_ARRAY_TASK_ID")
 
 # read in the genotype matrix
 # Note: Set the directory so that you can read in the file
@@ -18,7 +16,7 @@ h = 0.9 # this is the parameter that decides the variance components proportion
 RHEmc_template = read.table('RHEmc/RHEmc_template.txt', sep="", header=T)
 SAIGE_template = read.table('SAIGE/SAIGE_pheno_template.txt', sep="", header=T)
 
-
+for (i in 1:400){
 # output files directory
 RHEmc_out = sprintf("RHEmc/simulatedphenos/pheno_%d.txt", i)
 RHEmc_sd_out = sprintf("RHEmc/simulatedphenos_sd/pheno_%d.txt", i)
@@ -40,4 +38,4 @@ SAIGE_template$y_quantitative = y
 write.table(SAIGE_template, file=SAIGE_out, sep=" ", row.names=F, quote = F)
 SAIGE_template$y_quantitative = y_sd
 write.table(SAIGE_template, file=SAIGE_sd_out, sep=" ", row.names=F, quote = F)
-
+}

@@ -1,1 +1,1 @@
-../plink/example
+/net/wonderland/home/wangmk/GSRA/RHEmc-SAIGE-Compare/plink/example
