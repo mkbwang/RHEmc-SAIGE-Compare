@@ -16,6 +16,8 @@ sbatch step1_sd.slurm
 in the shell. The first case applies to phenotypes generated from the raw genotype matrix, and the second case applies to phenotypes generated from standardized genotype matrix.
 The results are going to be in `output` and `output_sd` folders correspondingly.
 
+_Note: You need to customize the directory names in both slurm files to get them running._
+
 To retreve the variance components, you need to go into `output` or `output_sd` folders, then type
 
 ```
