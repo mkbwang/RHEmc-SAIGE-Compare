@@ -17,6 +17,6 @@ sbatch runRHEmcsd.slurm
 in the shell. `runRHEmc.slurm` is used for phenotypes generated from raw genotype matrix and `runRHEmcsd.slurm` is used for standardizes genotype matrix.
 The results will be in `output` and `output_sd` correspondingly. In every output txt file, the first number is the variance component of SNP effect and the second number is the variance component of random errors.
 
-**Note: You need to customize the directory name in the two slurm files to get it working.**
+**Note: You need to customize the directory name in the two slurm files and the directory in `adr.txt`(the directory to the plink files) to get it working.**
 
 To learn more about batch processing, follow this [link](https://slurm.schedmd.com/sbatch.html).
